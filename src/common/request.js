@@ -1,7 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 
-const path = "http://localhost:8080";
+const path = "http://localhost:8080/v1/manager/";
 
 axios.defaults.withCredentials = true; //意思是携带cookie信息,保持session的一致性
 
@@ -49,28 +49,25 @@ class Request {
      * get方法
      */
     async get(url) {
-        const result = await axios.get(path + url);
-        return result;
+        return await axios.get(path + url);
     }
     /**
      * post方法
      */
     async post(url, data) {
-        const result = await axios.post(path + url, data);
-        return result;
+        return await axios.post(path + url, data);
     }
 
     async file(url) {
-        const result = await axios({
-            method:'get',
-            url: path + url, 
+        return axios({
+            method: 'get',
+            url: path + url,
             responseType: 'blob',
         });
-        return result;
     }
 }
 
 
-const request = new Request();
+const service = new Request();
 
-export default request;
+export default service;

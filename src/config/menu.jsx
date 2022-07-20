@@ -1,4 +1,5 @@
 
+// 配置列表
 const MenuConfig = [
     {
         id: 0,
@@ -26,28 +27,10 @@ const MenuConfig = [
     },
     {
         id: 4,
-        icon: 'Postcard',
-        name: '菜单管理',
-        path: '/menu',
-    },
-    {
-        id: 5,
         icon: 'Operation',
         name: '配置管理',
         path: '/config',
     },
-    {
-        id: 6,
-        icon: 'Notebook',
-        name: '日志管理',
-        path: '/log',
-    },
-    {
-        id: 7,
-        icon: 'Timer',
-        name: '定时任务',
-        path: '/timer',
-    }
 ]
 
 export default MenuConfig

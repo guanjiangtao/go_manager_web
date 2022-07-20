@@ -14,7 +14,6 @@
               <icons-render :props-name="item.icon"/>
             </el-icon>
             <el-button @click="changeRouter(item.path)" link>{{ item.name }}</el-button>
-            <!--            <router-link :to="item.path" ></router-link>-->
           </el-menu-item>
         </el-menu>
       </el-aside>
