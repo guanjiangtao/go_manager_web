@@ -1,10 +1,12 @@
 <template>
-  <div>面板</div>
+  <div>
+    <router-view/>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "panel"
+  name: "user"
 }
 </script>
 
